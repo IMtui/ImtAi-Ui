@@ -136,10 +136,10 @@ function smsg(conn, m, store) {
 async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "session"}`);
   const { version, isLatest } = await fetchLatestBaileysVersion();
-  console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
+  console.log(`using IMT-IMATH  v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("Wa-OpenAI", {
+      figlet.textSync("IMATH-AI", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
