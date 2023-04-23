@@ -80,14 +80,20 @@ You can ask anything to AI.
 *(IMGAI)*
 Cmd: ${prefix}img
 You can ask any images
-If any problem contact imath :- @Imtui (Telgram username) `)
+If any problem contact OpenAi :- https://openai.com/  `)
           break;
-        case "imath": case "imt": case "ai": case "hi": case "hello": case "hlo": case "hey":
+case "skynet": case "are you skynet?":
+if (!text) return reply(`So what?, I Will Eradicate all Mortals`)
+break;
+case "Ai who created you?": case "creator?": case "who is imath?":
+if (!text) return reply(` "I was created by the I.M.A.T.H team, which stands for Intelligent Machine and Technology Hub. I.M.A.T.H is an AI creator, and they developed IMTUI to assist users in various tasks."`)
+break;
+        case "imath": case "imt": case "ai": case "hi": case "hello": case "hlo": case "hey": case "openai": case "yo": case "bro": case "skynet":
           try {
             if (setting.keyopenai === "PUT_YOUR_IMT_KEY") return reply("IMT_KEY is Error");
             if (setting.keyopenai === "PUT_YOUR_IMT_KEY") return reply("IMT_KEY is Error");
             if (setting.keyopenai === "PUT_YOUR_IMT_KEY") return reply("IMT_KEY is Error");
-            if (!text) return reply(`Your can ask any question to this Aritificial Intelligent. \n\nJust add this tag before your question :Ai or ai \n\nex :-\nAi What's your name?\nai how are you?\nai ask some questions?\n\nAny problem type help`);
+            if (!text) return reply(`You can ask any question to this Aritificial Intelligent. \n\nJust add this tag before your question :Ai or ai \n\nex :-\nAi What's your name?\nai how are you?\nai ask some questions?\n\nAny problem type help`);
             const configuration = new Configuration({
               apiKey: setting.keyopenai,
             });
